@@ -226,46 +226,99 @@
 
 // Access Modifiers  OR  Class Modifiers
 
-class User{
-    private name: string;
-    private age: number;
-    private email: string;
+// class User{
+//     private name: string;
+//     private age: number;
+//     private email: string;
 
-    constructor(name:string, age:number, email: string){
-        this.name = name;
-        this.age = age;
-        this.email = email;
-    }
+//     constructor(name:string, age:number, email: string){
+//         this.name = name;
+//         this.age = age;
+//         this.email = email;
+//     }
 
-    public getName(){
-        return this.name
-    }
+//     public getName(){
+//         return this.name
+//     }
 
-    getAge(){
-        return this.age
-    }
+//     getAge(){
+//         return this.age
+//     }
 
-    setName(name:string){
-        this.name = name
-    }
+//     setName(name:string){
+//         this.name = name
+//     }
 
-    public setAge(age:number){
-        this.age= age
-    }
-}
+//     public setAge(age:number){
+//         this.age= age
+//     }
+// }
 
-const user1 = new User("Alice", 24, "alice@mail.com")
+// const user1 = new User("Alice", 24, "alice@mail.com")
 
-console.log(user1.getName())
-console.log(user1.getAge())
+// console.log(user1.getName())
+// console.log(user1.getAge())
 
-user1.setName("Bob")
-user1.setAge(28)
+// user1.setName("Bob")
+// user1.setAge(28)
 
-console.log(user1.getName())
-console.log(user1.getAge())
+// console.log(user1.getName())
+// console.log(user1.getAge())
 
 // --------------------------------------------------------------------------------------------
 
+// Static Functions
+
+// class User{
+//     private name: string;
+//     private age: number;
+//     private email: string;
+
+//     constructor(name:string, age:number, email: string){
+//         this.name = name;
+//         this.age = age;
+//         this.email = email;
+//     }
+
+//     static getAge(age: number){
+//         return age >18
+//     }
+// }
+
+// console.log(User.getAge(25))
+
+// --------------------------------------------------------------------------------------------
+
+// Static Properties
+
+// class User{
+//     name: string;
+//     static totalUsers: number = 0
+
+//     constructor(name: string){
+//         this.name = name;
+//         User.totalUsers++
+//     }
+
+//     getName(){
+//         return this.name
+//     }
+
+//     static getTotalUsers(){
+//         return User.totalUsers
+//     }
+// }
+
+// console.log(User.totalUsers)
+
+// const user1 = new User("Alice")
+// console.log(user1.getName())
+// console.log(User.getTotalUsers())
+
+// const user2 = new User("Bob")
+// console.log(user2.getName())
+// console.log(User.getTotalUsers())
+
+// --------------------------------------------------------------------------------------------
 
 
