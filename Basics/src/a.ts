@@ -125,6 +125,7 @@
 // let user1 = new User("John","Developer",5)
 // let user2 = new User("Doe","Manager",8)
 
+// console.log(user1.name)
 // console.log(user1.greet())
 // console.log(user2.details())
 
@@ -222,5 +223,49 @@
 // console.log(counter2.getCounter(), "COUNTER 2")
 
 // --------------------------------------------------------------------------------------------
+
+// Access Modifiers  OR  Class Modifiers
+
+class User{
+    private name: string;
+    private age: number;
+    private email: string;
+
+    constructor(name:string, age:number, email: string){
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
+    public getName(){
+        return this.name
+    }
+
+    getAge(){
+        return this.age
+    }
+
+    setName(name:string){
+        this.name = name
+    }
+
+    public setAge(age:number){
+        this.age= age
+    }
+}
+
+const user1 = new User("Alice", 24, "alice@mail.com")
+
+console.log(user1.getName())
+console.log(user1.getAge())
+
+user1.setName("Bob")
+user1.setAge(28)
+
+console.log(user1.getName())
+console.log(user1.getAge())
+
+// --------------------------------------------------------------------------------------------
+
 
 
