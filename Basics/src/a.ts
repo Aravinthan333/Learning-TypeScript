@@ -321,4 +321,35 @@
 
 // --------------------------------------------------------------------------------------------
 
+// Type Assertion
+
+// const element = document.getElementById("myElement") as HTMLInputElement
+
+// element.value = "Hello"
+
+// --------------------------------------------------------------------------------------------
+
+// Intersection Types
+
+interface Employee {
+    name: string;
+    id: number
+}
+
+interface Admin{
+    isAdmin: boolean
+    accessLevel: number
+}
+
+type AdminEmployee = Employee & Admin
+
+let adminEmployee1 : AdminEmployee = {
+    name: "John",
+    id: 1,
+    isAdmin: true,
+    accessLevel: 5
+}
+
+console.log(adminEmployee1.isAdmin)
+console.log(adminEmployee1.name)
 
