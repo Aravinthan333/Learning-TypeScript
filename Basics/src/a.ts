@@ -99,3 +99,128 @@
 
 // --------------------------------------------------------------------------------------------
 
+// Class
+
+// class User {
+//     name:string;
+//     role:string;
+//     salary:number
+    
+//     constructor(name:string, role:string, salary:number) {
+//         this.name=name
+//         this.role=role
+//         this.salary=salary
+//     }
+
+//     greet(){
+//         return `Hello ${this.name}`
+//     }
+
+//     details(){
+//         return `Name: ${this.name}, Role: ${this.role}, Salary: ${this.salary}`
+//     }
+
+// }
+
+// let user1 = new User("John","Developer",5)
+// let user2 = new User("Doe","Manager",8)
+
+// console.log(user1.greet())
+// console.log(user2.details())
+
+// --------------------------------------------------------------------------------------------
+
+// Inheritance
+
+// class Person{
+//     firstName: string;
+//     lastName: string;
+//     age: number;
+
+//     constructor (firstName: string, lastName: string, age: number){
+//         this.firstName = firstName
+//         this.lastName = lastName
+//         this.age = age
+//     }
+
+//     greet(){
+//         return `Hello ${this.firstName} ${this.lastName}`
+//     }
+
+//     getAge(){
+//         return `Age :  ${this.age}`
+//     }
+// }
+
+// class Employee extends Person{
+//     employeeId: number;
+
+//     constructor (firstName: string, lastName:string, age: number, employeeId:number){
+//         super(firstName, lastName, age)
+//         this.employeeId = employeeId
+//     }
+
+//     getEmployeeId(){
+//         return `id of ${this.firstName} is ${this.employeeId}`
+//     }
+// }
+
+// class Admin extends Person{
+//     role: string
+
+//     constructor(firstName: string, lastName:string, age: number, role: string){
+//         super(firstName, lastName, age)
+//         this.role = role
+//     }
+
+//     greet(){
+//         return `Hello from ${this.firstName} ${this.lastName} as ${this.role}`
+//     }
+
+//     manageUsers(){
+//         return `Managing users with role ${this.role}`
+//     }
+// }
+
+// let employee1 = new Employee("John","doe", 25, 458458)
+// let admin1 = new Admin("Emma", "Stone", 24,"Administrator")
+
+// console.log(employee1.greet())
+// console.log(admin1.manageUsers())
+// console.log(admin1.greet().toUpperCase())
+
+// --------------------------------------------------------------------------------------------
+
+// closures
+
+// function createCounter(){
+//     let counter = 0;
+
+//     return {
+//         increment: function(){
+//             counter++;
+//         },
+//         getCounter: function(){
+//             return counter
+//         }
+//     }
+// }
+
+// const counter1= createCounter()
+// const counter2= createCounter()
+
+// console.log(counter1.getCounter(), "COUNTER 1")
+// console.log(counter2.getCounter(), "COUNTER 2")
+
+// counter1.increment()
+// counter1.increment()
+// counter1.increment()
+
+// counter2.increment()
+
+// console.log(counter1.getCounter(), "COUNTER 1")
+// console.log(counter2.getCounter(), "COUNTER 2")
+
+// --------------------------------------------------------------------------------------------
+
+
